@@ -28,7 +28,7 @@ const Banner = () => {
       </div>
       <Container>
         <img src={ring} />
-        <h1 className={styles.bannerhText}>
+        <h1 className="font-extrabold font-open text-[#192239] leading-tight mt-[12px] mb-[20px] w-[686px]">
           We Are Digital <span className=" text-[#FF7628]  ">Marketing</span>{" "}
           Agency
         </h1>
@@ -37,7 +37,9 @@ const Banner = () => {
           convert. Digital marketing’s development has changed the way brands
           and businesses use technology for marketing.{" "}
         </h3>
-        <Button className={styles.bannerButton}>Get Free Quoto</Button>
+        <Button className="font-bold text-xl text-white px-[40px] py-5 inline-block rounded-full mt-[32px] ">
+          Get Free Quoto
+        </Button>
       </Container>
       <div>
         <img
