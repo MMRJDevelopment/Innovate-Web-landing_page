@@ -4,8 +4,9 @@ const styles = {
   bannerButton:
     "font-bold text-xl text-white px-[40px] py-5 inline-block rounded-full mt-[32px] bg-red-500 ",
   workA:
-    "font-open font-semibold text-[24px] text-[#6C7D93] hover:text-[#FF7628] px-10 ",
+    "font-open font-semibold text-[24px] sm:text-base text-[#6C7D93] hover:text-[#FF7628] px-10 ",
 
-  fText: "font-nun font-semibold text-[#6C7D93] text-[20px] mt-[30px]",
+  fText:
+    "font-nun font-semibold text-[#6C7D93] text-[20px] mt-[30px] md:mt-[10px]",
 };
 export { styles };

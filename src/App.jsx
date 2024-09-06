@@ -12,13 +12,13 @@ function App() {
     <>
       <Navber />
       <Banner />
-      <Services />
+      <Services  />
       <Who />
       <Work />
-      <Creative/>
-      <Review/>
-      <Latest_Blog/>
-      <Features/>
+      <Creative />
+      <Review />
+      <Latest_Blog />
+      <Features />
     </>
   );
 }
