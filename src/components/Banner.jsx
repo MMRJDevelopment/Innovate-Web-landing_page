@@ -88,14 +88,12 @@ const Banner = () => {
       >
         <img
           src="/bannerimgtow.jpg"
-          className=" drop-shadow-md border-8 border-white rounded-[60px] w-[450px] h-[424px] lg:w-[400px] lg:h-[374px] absolute top-[350px] right-[350px] lg:right-[250px] lg:top-[300px] sm:h-[300px] sm:w-[300px] sm:top-[650px] sm:left-1 md:top-[700px] md:left-1"
+          className=" drop-shadow-md border-8 border-white rounded-[60px] w-[450px] h-[424px] lg:w-[400px] lg:h-[374px] absolute top-[350px] right-[350px] lg:right-[150px] lg:top-[350px] sm:h-[300px] sm:w-[300px] sm:top-[650px] sm:left-1 md:top-[700px] md:left-1"
           alt=""
         />
         <img
           src="/bannerimone.jpg"
-          className=" drop-shadow-md
-
- bg-cover border-8 border-white rounded-[60px] w-[450px] h-[424px] absolute top-[100px] right-[100px] lg:w-[400px] lg:h-[374px] sm:h-[300px] sm:w-[300px] sm:top-[400px] sm:right-0 md:top-[400px] md:right-0"
+          className=" drop-shadow-md bg-cover border-8 border-white rounded-[60px] w-[450px] h-[424px] absolute top-[100px] right-[100px] lg:right-0 lg:w-[400px] lg:h-[374px] sm:h-[300px] sm:w-[300px] sm:top-[400px] sm:right-0 md:top-[400px] md:right-0"
           alt=""
         />
       </motion.div>
