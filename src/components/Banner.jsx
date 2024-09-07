@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useRef } from "react";
+import { motion } from "framer-motion";
+
 import Container from "./layout/Container";
 import ring from "/ring.png";
 import { styles } from "../../style";
@@ -6,28 +8,61 @@ import { Button } from "./layout/Button";
 
 const Banner = () => {
   return (
-    <div className="relative mt-[126px] sm:mt-10 md:mt-10 pb-[207px] sm:pb-[570px] md:pb-[750px] ">
+    <div className="relative pt-[126px] sm:pt-0   sm:mt-10 md:pt-10 pb-[207px] sm:pb-[570px] md:pb-[750px] bg-custom-gradient-100/[.06]  ">
       <div>
         <img
           src="/texchrer.png"
           className="absolute top-[-220px] left-0 z-[-10] sm:hidden md:hidden lg:hidden "
         />
-        <img
-          src="/cratoon.png"
-          className=" absolute top-[-50px]  left-[85px] z-[-10] lg:hidden sm:hidden md:hidden"
-        />
-        <img
-          src="/twitter.png"
-          className=" absolute bottom-[-50px] lg:bottom-0 left-[70px] z-[-10] md:hidden sm:hidden"
-        />
-        <img
-          src="/instagram.png"
-          className="  absolute top-[430px]  left-[950px] z-[-10] lg:hidden md:hidden sm:hidden"
-        />
-        <img
-          src="/face-what.png"
-          className="absolute top-[-220px] right-10 lg:hidden md:hidden sm:hidden"
-        />
+
+        <motion.div
+          animate={{ x: [-20, 0, -10, -20], y: [-100, 0, 50, -100] }}
+          transition={{
+            repeat: Infinity,
+            duration: 20,
+          }}
+        >
+          <img
+            src="/cratoon.png"
+            className=" absolute top-[-50px]  left-[85px] z-[-10] lg:hidden sm:hidden md:hidden overflow-x-hidden "
+          />
+        </motion.div>
+        <motion.div
+          animate={{ x: [-100, 0, -10, -50], y: [600, 600, 500, 400] }}
+          transition={{
+            repeat: Infinity,
+            duration: 20,
+          }}
+        >
+          <img
+            src="/twitter.png"
+            className=" absolute bottom-[-50px] lg:bottom-0 left-[70px] z-[-10] md:hidden sm:hidden "
+          />
+        </motion.div>
+        <motion.div
+          animate={{ x: [-100, 0, -20, -100], y: [50, 0, 50, 0] }}
+          transition={{
+            repeat: Infinity,
+            duration: 20,
+          }}
+        >
+          <img
+            src="/instagram.png"
+            className="  absolute top-[430px]  left-[950px] z-[-10] lg:hidden md:hidden sm:hidden"
+          />
+        </motion.div>
+        <motion.div
+          animate={{ x: [-100, 0, -20, -100], y: [50, 0, 50, 0] }}
+          transition={{
+            repeat: Infinity,
+            duration: 20,
+          }}
+        >
+          <img
+            src="/face-what.png"
+            className="absolute top-[-220px] right-10 lg:hidden md:hidden sm:hidden"
+          />
+        </motion.div>
       </div>
       <Container>
         <div className="sm:px-[10px] md:px-[16px]">
@@ -41,25 +76,29 @@ const Banner = () => {
             convert. Digital marketing’s development has changed the way brands
             and businesses use technology for marketing.{" "}
           </h3>
-          <Button className=" bg-[#FF7628] font-bold text-xl sm:text-sm md:text-base text-white px-[40px] sm:px-4 md:px-5 py-5 sm:py-3 md:py-4 inline-block rounded-full mt-[32px] ">
+          <button className=" bg-[#FF7628] font-bold text-xl sm:text-sm md:text-base text-white px-[40px] py-[20px] sm:px-4 md:px-5  sm:py-3 md:py-4 inline-block rounded-full mt-[32px] ">
             Get Free Quoto
-          </Button>
+          </button>
         </div>
       </Container>
-      <div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
         <img
           src="/bannerimgtow.jpg"
-          className=" drop-shadow-md border-8 border-white rounded-[60px] w-[450px] h-[424px] lg:w-[400px] lg:h-[374px] absolute top-[200px] right-[350px] lg:right-[250px] lg:top-[300px] sm:h-[300px] sm:w-[300px] sm:top-[600px] sm:left-1 md:top-[700px] md:left-1"
+          className=" drop-shadow-md border-8 border-white rounded-[60px] w-[450px] h-[424px] lg:w-[400px] lg:h-[374px] absolute top-[350px] right-[350px] lg:right-[250px] lg:top-[300px] sm:h-[300px] sm:w-[300px] sm:top-[650px] sm:left-1 md:top-[700px] md:left-1"
           alt=""
         />
         <img
           src="/bannerimone.jpg"
           className=" drop-shadow-md
 
- bg-cover border-8 border-white rounded-[60px] w-[450px] h-[424px] absolute top-0 right-[100px] lg:w-[400px] lg:h-[374px] sm:h-[300px] sm:w-[300px] sm:top-[350px] sm:right-0 md:top-[400px] md:right-0"
+ bg-cover border-8 border-white rounded-[60px] w-[450px] h-[424px] absolute top-[100px] right-[100px] lg:w-[400px] lg:h-[374px] sm:h-[300px] sm:w-[300px] sm:top-[400px] sm:right-0 md:top-[400px] md:right-0"
           alt=""
         />
-      </div>
+      </motion.div>
     </div>
   );
 };

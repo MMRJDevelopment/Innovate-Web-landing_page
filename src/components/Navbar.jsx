@@ -38,9 +38,9 @@ const Navbar = () => {
           </ul>
         </div>
 
-        <Button className=" bg-[#FF7628] px-7 py-[14px] rounded-full font-semibold text-lg sm:hidden md:mx-[4px] md:py-[12px] text-white">
+        <button className=" bg-[#FF7628] px-[28px] py-[14px] rounded-full font-semibold text-[18px] sm:hidden md:mx-[4px] md:py-[12px] text-white">
           Contact Us
-        </Button>
+        </button>
       </Flex>
     </Container>
   );
